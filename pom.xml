@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>sds.simulator-service</artifactId>
+    <artifactId>sds.supply-service</artifactId>
     <groupId>com.lightbend.akka.samples</groupId>
     <version>1.0</version>
 
@@ -218,7 +218,7 @@
                         <argument>-Dconfig.resource=${APP_CONFIG}</argument>
                         <argument>-classpath</argument>
                         <classpath />
-                        <argument>sds.simulator.Main</argument>
+                        <argument>sds.supply.Main</argument>
                     </arguments>
                 </configuration>
             </plugin>
@@ -285,7 +285,7 @@
                                     <tag>${version.number}</tag>
                                 </tags>
                                 <entryPoint>
-                                    java $JAVA_OPTS -cp '/maven/*' sds.simulator.Main
+                                    java $JAVA_OPTS -cp '/maven/*' sds.supply.Main
                                 </entryPoint>
                                 <assembly>
                                     <descriptorRef>artifact-with-dependencies</descriptorRef>
